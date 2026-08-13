@@ -1,0 +1,123 @@
+// Paste into your VS Code User settings.json (Ctrl+Shift+P -> "Open User Settings (JSON)").
+// This pins MCNP colors explicitly so they no longer depend on which theme you use.
+// Merge into an existing "editor.tokenColorCustomizations" block if you already have one.
+{
+	"[mcnp]": {
+		"editor.detectIndentation": false,
+		"editor.tabSize": 8,
+		"editor.insertSpaces": true,
+		"editor.rulers": [80],
+		"editor.renderWhitespace": "boundary"
+	},
+
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": "comment.line.c.mcnp",
+				"settings": { "foreground": "#6A9955", "fontStyle": "italic" }
+			},
+			{
+				"scope": ["comment.line.dollar.mcnp", "comment.line.ampersand.mcnp"],
+				"settings": { "foreground": "#5A8A4A", "fontStyle": "italic" }
+			},
+			{
+				"scope": "entity.name.section.title.mcnp",
+				"settings": { "foreground": "#DCDCAA", "fontStyle": "bold" }
+			},
+			{
+				"scope": ["entity.name.function.cell.mcnp", "entity.name.function.surface.mcnp"],
+				"settings": { "foreground": "#4FC1FF", "fontStyle": "bold" }
+			},
+			{
+				"scope": ["entity.name.type.material.mcnp", "entity.name.type.transform.mcnp"],
+				"settings": { "foreground": "#4EC9B0" }
+			},
+			{
+				"scope": "constant.numeric.density.mcnp",
+				"settings": { "foreground": "#B5CEA8", "fontStyle": "italic" }
+			},
+			{
+				"scope": "support.function.surface.mcnp",
+				"settings": { "foreground": "#DCDCAA", "fontStyle": "bold" }
+			},
+			{
+				"scope": "keyword.control.source.mcnp",
+				"settings": { "foreground": "#CE9178" }
+			},
+			{
+				"scope": "keyword.control.material.mcnp",
+				"settings": { "foreground": "#C586C0" }
+			},
+			{
+				"scope": "keyword.control.tally.mcnp",
+				"settings": { "foreground": "#569CD6" }
+			},
+			{
+				"scope": "keyword.control.problem.mcnp",
+				"settings": { "foreground": "#D16969" }
+			},
+			{
+				"scope": "keyword.control.variance.mcnp",
+				"settings": { "foreground": "#D7BA7D" }
+			},
+			{
+				"scope": "keyword.control.geometry.mcnp",
+				"settings": { "foreground": "#9CDCFE" }
+			},
+			{
+				"scope": ["keyword.control.data.mcnp", "keyword.control.void.mcnp"],
+				"settings": { "foreground": "#C586C0" }
+			},
+			{
+				"scope": [
+					"entity.name.function.material.mcnp",
+					"entity.name.function.tally.mcnp",
+					"entity.name.function.distribution.mcnp",
+					"entity.name.function.detector.mcnp",
+					"entity.name.function.transform.mcnp"
+				],
+				"settings": { "foreground": "#4EC9B0" }
+			},
+			{
+				"scope": "entity.name.tag.particle.mcnp",
+				"settings": { "foreground": "#F09A5B", "fontStyle": "bold" }
+			},
+			{
+				"scope": "variable.parameter.mcnp",
+				"settings": { "foreground": "#9CDCFE" }
+			},
+			{
+				"scope": "variable.other.distribution.mcnp",
+				"settings": { "foreground": "#C8A0E0" }
+			},
+			{
+				"scope": "constant.numeric.mcnp",
+				"settings": { "foreground": "#B5CEA8" }
+			},
+			{
+				"scope": "constant.other.zaid.mcnp",
+				"settings": { "foreground": "#7FD6C0" }
+			},
+			{
+				"scope": "constant.other.library.mcnp",
+				"settings": { "foreground": "#4A9C88", "fontStyle": "italic" }
+			},
+			{
+				"scope": "keyword.other.shorthand.mcnp",
+				"settings": { "foreground": "#E5C07B", "fontStyle": "bold" }
+			},
+			{
+				"scope": ["keyword.operator.geometry.mcnp", "keyword.operator.mcnp"],
+				"settings": { "foreground": "#D4D4D4", "fontStyle": "bold" }
+			},
+			{
+				"scope": "keyword.operator.modifier.mcnp",
+				"settings": { "foreground": "#F44747", "fontStyle": "bold" }
+			},
+			{
+				"scope": "keyword.operator.continuation.mcnp",
+				"settings": { "foreground": "#F44747", "fontStyle": "bold" }
+			}
+		]
+	}
+}
